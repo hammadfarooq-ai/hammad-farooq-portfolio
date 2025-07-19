@@ -7,21 +7,21 @@ const projects = [
     title: "House Price Prediction",
     description: "Built a regression model using Scikit-learn and Pandas to predict house prices based on various features. Implemented data preprocessing, feature engineering, and model evaluation techniques.",
     tech: ["Python", "Scikit-learn", "Pandas", "Regression"],
-    githubUrl: "https://github.com/hammadfarooq-ai/house-price-prediction",
+    githubUrl: "https://github.com/hammadfarooq-ai/House-Price-Prediction-",
     demoUrl: "#"
   },
   {
     title: "MNIST Digit Classification & Custom Dataset",
     description: "Developed classifiers using TensorFlow & Keras for both MNIST digit recognition and custom dataset classification. Achieved high accuracy with deep learning techniques.",
     tech: ["TensorFlow", "Keras", "Deep Learning", "CNN"],
-    githubUrl: "https://github.com/hammadfarooq-ai/mnist-classification",
+    githubUrl: "https://github.com/hammadfarooq-ai/Classification-Fundamentals-and-MNIST-Digit-Recognition",
     demoUrl: "#"
   },
   {
     title: "Brain Tumor Detection",
     description: "Used YOLO & SAM for object detection and segmentation to identify brain tumors in medical images. Implemented state-of-the-art computer vision algorithms for healthcare applications.",
     tech: ["YOLO", "SAM", "OpenCV", "Computer Vision"],
-    githubUrl: "https://github.com/hammadfarooq-ai/brain-tumor-detection",
+    githubUrl: "https://github.com/hammadfarooq-ai/Brain_Tumor_Detection",
     demoUrl: "#"
   }
 ];

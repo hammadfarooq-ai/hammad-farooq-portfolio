@@ -8,28 +8,32 @@ const certifications = [
     issuer: "IBM",
     description: "Comprehensive course covering ML algorithms, Python libraries, and practical implementations",
     icon: "🤖",
-    color: "primary"
+    color: "primary",
+    certificateUrl: "https://courses.cognitiveclass.ai/certificates/cba3b93fe7d24f0d98fd7604a95a6348"
   },
   {
     title: "Data Visualization with Python",
     issuer: "IBM", 
     description: "Advanced techniques for creating impactful visualizations using Python libraries",
     icon: "📊",
-    color: "accent"
+    color: "accent",
+    certificateUrl: "https://courses.cognitiveclass.ai/certificates/bef61b1196af4d22b859bc323d415fe0"
   },
   {
     title: "Intro to Machine Learning",
     issuer: "Kaggle",
     description: "Foundational concepts and practical applications in machine learning",
     icon: "🧠",
-    color: "primary"
+    color: "primary",
+    certificateUrl: "https://www.kaggle.com/learn/certification/hammadfarooq470/intro-to-machine-learning"
   },
   {
     title: "Intro to Data Science",
     issuer: "Cisco",
     description: "Core principles and methodologies in data science and analytics",
     icon: "📈",
-    color: "accent"
+    color: "accent",
+    certificateUrl: "#"
   }
 ];
 
@@ -78,6 +82,8 @@ const Certifications = () => {
                   variant="outline" 
                   size="sm"
                   className="border-primary/30 hover:border-primary hover:bg-primary/10 w-full"
+                  onClick={() => window.open(cert.certificateUrl, '_blank')}
+                  disabled={cert.certificateUrl === '#'}
                 >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View Certificate
