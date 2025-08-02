@@ -33,7 +33,15 @@ const certifications = [
     description: "Core principles and methodologies in data science and analytics",
     icon: "📈",
     color: "accent",
-    certificateUrl: "#"
+    certificateUrl: "https://www.credly.com/badges/ad3d79b4-a71c-4a99-b0bc-6411bfbf4a8a"
+  },
+  {
+    title: "Microsoft AI & ML Engineering",
+    issuer: "Microsoft",
+    description: "Professional certification in AI and machine learning engineering practices",
+    icon: "🚀",
+    color: "primary",
+    certificateUrl: "https://www.coursera.org/account/accomplishments/professional-cert/QFL9NO24AM7X"
   }
 ];
 
