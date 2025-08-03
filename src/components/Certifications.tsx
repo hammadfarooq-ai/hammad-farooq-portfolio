@@ -42,6 +42,14 @@ const certifications = [
     icon: "🚀",
     color: "primary",
     certificateUrl: "https://www.coursera.org/account/accomplishments/professional-cert/QFL9NO24AM7X"
+  },
+  {
+    title: "Statistics with Python",
+    issuer: "University of Michigan",
+    description: "Comprehensive specialization covering statistical analysis and data science with Python",
+    icon: "📊",
+    color: "accent",
+    certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/AXVDK22Y3XT4"
   }
 ];
 
