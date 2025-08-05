@@ -50,6 +50,14 @@ const certifications = [
     icon: "📊",
     color: "accent",
     certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/AXVDK22Y3XT4"
+  },
+  {
+    title: "Google Data Analytics",
+    issuer: "Google",
+    description: "Professional certification covering data analysis techniques, tools, and best practices",
+    icon: "📈",
+    color: "primary",
+    certificateUrl: "https://youtube.com/shorts/VDr08j2OlEM?si=E8Nl6Hip42GHiXfr"
   }
 ];
 
