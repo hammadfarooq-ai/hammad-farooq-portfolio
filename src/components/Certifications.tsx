@@ -4,6 +4,30 @@ import { Button } from "@/components/ui/button";
 
 const certifications = [
   {
+    title: "Microsoft AI & ML Engineering",
+    issuer: "Microsoft",
+    description: "Professional certification in AI and machine learning engineering practices",
+    icon: "🚀",
+    color: "primary",
+    certificateUrl: "https://www.coursera.org/account/accomplishments/professional-cert/QFL9NO24AM7X"
+  },
+  {
+    title: "Statistics with Python",
+    issuer: "University of Michigan",
+    description: "Comprehensive specialization covering statistical analysis and data science with Python",
+    icon: "📊",
+    color: "accent",
+    certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/AXVDK22Y3XT4"
+  },
+  {
+    title: "Google Data Analytics",
+    issuer: "Google",
+    description: "Professional certification covering data analysis techniques, tools, and best practices",
+    icon: "📈",
+    color: "primary",
+    certificateUrl: "https://youtube.com/shorts/VDr08j2OlEM?si=E8Nl6Hip42GHiXfr"
+  },
+  {
     title: "Machine Learning with Python",
     issuer: "IBM",
     description: "Comprehensive course covering ML algorithms, Python libraries, and practical implementations",
@@ -34,30 +58,6 @@ const certifications = [
     icon: "📈",
     color: "accent",
     certificateUrl: "https://www.credly.com/badges/ad3d79b4-a71c-4a99-b0bc-6411bfbf4a8a"
-  },
-  {
-    title: "Microsoft AI & ML Engineering",
-    issuer: "Microsoft",
-    description: "Professional certification in AI and machine learning engineering practices",
-    icon: "🚀",
-    color: "primary",
-    certificateUrl: "https://www.coursera.org/account/accomplishments/professional-cert/QFL9NO24AM7X"
-  },
-  {
-    title: "Statistics with Python",
-    issuer: "University of Michigan",
-    description: "Comprehensive specialization covering statistical analysis and data science with Python",
-    icon: "📊",
-    color: "accent",
-    certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/AXVDK22Y3XT4"
-  },
-  {
-    title: "Google Data Analytics",
-    issuer: "Google",
-    description: "Professional certification covering data analysis techniques, tools, and best practices",
-    icon: "📈",
-    color: "primary",
-    certificateUrl: "https://youtube.com/shorts/VDr08j2OlEM?si=E8Nl6Hip42GHiXfr"
   }
 ];
 
