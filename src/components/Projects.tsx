@@ -4,6 +4,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Covid-19 Data Analysis Project",
+    description: "Comprehensive vaccination data analysis project focusing on processing Excel datasets, cleaning inconsistent data, and generating interactive visualizations for gender-based and age-specific vaccination trends. Includes data transformation and CSV export functionality.",
+    tech: ["Python", "Pandas", "Plotly", "Excel", "CSV", "Data Visualization"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Covid-19-Data-Analysis-Project",
+    demoUrl: "#"
+  },
+  {
     title: "Loan Prediction Model",
     description: "Developed a machine learning model to predict loan default risk using comprehensive data analysis and feature engineering. Implemented multiple algorithms for accurate risk assessment in financial lending.",
     tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
