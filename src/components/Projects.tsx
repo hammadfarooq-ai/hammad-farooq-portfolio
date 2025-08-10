@@ -4,6 +4,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Titanic Survival Prediction",
+    description: "Machine learning project predicting passenger survival on the Titanic using Random Forest classifier. Includes data exploration, feature engineering with one-hot encoding, and Kaggle competition submission workflow with comprehensive data analysis.",
+    tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Random Forest", "Kaggle API"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Titanic-Survival-Prediction",
+    demoUrl: "#"
+  },
+  {
     title: "Covid-19 Data Analysis Project",
     description: "Comprehensive vaccination data analysis project focusing on processing Excel datasets, cleaning inconsistent data, and generating interactive visualizations for gender-based and age-specific vaccination trends. Includes data transformation and CSV export functionality.",
     tech: ["Python", "Pandas", "Plotly", "Excel", "CSV", "Data Visualization"],
