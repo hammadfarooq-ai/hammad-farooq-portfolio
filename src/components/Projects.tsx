@@ -4,6 +4,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Loan Prediction Model",
+    description: "Developed a machine learning model to predict loan default risk using comprehensive data analysis and feature engineering. Implemented multiple algorithms for accurate risk assessment in financial lending.",
+    tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+    githubUrl: "https://github.com/hammadfarooq-ai/loan_default_prediction",
+    demoUrl: "#"
+  },
+  {
     title: "House Price Prediction",
     description: "Built a regression model using Scikit-learn and Pandas to predict house prices based on various features. Implemented data preprocessing, feature engineering, and model evaluation techniques.",
     tech: ["Python", "Scikit-learn", "Pandas", "Regression"],
