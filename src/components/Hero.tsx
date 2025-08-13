@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
-import { TwitterIcon as X } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail, X } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -43,7 +42,7 @@ const Hero = () => {
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
+              Hire Me
             </Button>
             
             <Button 

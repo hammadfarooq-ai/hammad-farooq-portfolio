@@ -14,8 +14,141 @@ const Experience = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
-          <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card">
+        <div className="max-w-4xl mx-auto space-y-8">
+          {/* Python Programming Intern */}
+          <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in">
+            <CardHeader>
+              <div className="flex items-start justify-between flex-col md:flex-row gap-4">
+                <div className="flex-1">
+                  <CardTitle className="text-2xl text-foreground flex items-center gap-3 mb-2">
+                    <Building className="h-6 w-6 text-primary" />
+                    Python Programming Intern
+                  </CardTitle>
+                  <CardDescription className="text-lg text-primary font-semibold">
+                    CodeAlpha
+                  </CardDescription>
+                </div>
+                
+                <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    Oct 2024 - Jan 2025
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4" />
+                    India (Remote)
+                  </div>
+                </div>
+              </div>
+            </CardHeader>
+            
+            <CardContent>
+              <div className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Strengthened coding skills and enhanced problem-solving abilities through real-world Python projects 
+                  during a 4-month intensive internship program.
+                </p>
+                
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3">Key Projects & Achievements:</h4>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Built a high-efficiency Python script for generating the Fibonacci series</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Designed and deployed a student grade tracker for managing and calculating academic performance</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Strengthened coding skills and enhanced problem-solving abilities through real-world projects</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="flex flex-wrap gap-2 pt-4">
+                  {["Python", "Algorithm Design", "Data Structures", "Problem Solving", "Software Development"].map((skill, index) => (
+                    <span 
+                      key={index}
+                      className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Dev Weekends Fellow */}
+          <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <CardHeader>
+              <div className="flex items-start justify-between flex-col md:flex-row gap-4">
+                <div className="flex-1">
+                  <CardTitle className="text-2xl text-foreground flex items-center gap-3 mb-2">
+                    <Building className="h-6 w-6 text-accent" />
+                    Fellow
+                  </CardTitle>
+                  <CardDescription className="text-lg text-accent font-semibold">
+                    Dev Weekends
+                  </CardDescription>
+                </div>
+                
+                <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    Jun 2025 - Aug 2025
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4" />
+                    Pakistan (Remote)
+                  </div>
+                </div>
+              </div>
+            </CardHeader>
+            
+            <CardContent>
+              <div className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Focused fellowship program on mastering Data Structures & Algorithms and C++ programming, 
+                  with emphasis on competitive programming and technical skill development.
+                </p>
+                
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3">Key Achievements & Focus Areas:</h4>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Focused on mastering Data Structures & Algorithms (DSA) and C++</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Applied problem-solving techniques to tackle competitive programming challenges</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                      <span>Expanded technical skills, which contributed to securing this role (thanks to LinkedIn)</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="flex flex-wrap gap-2 pt-4">
+                  {["C++", "Data Structures", "Algorithms", "Competitive Programming", "Problem Solving", "LinkedIn Networking"].map((skill, index) => (
+                    <span 
+                      key={index}
+                      className="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Machine Learning Intern */}
+          <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <CardHeader>
               <div className="flex items-start justify-between flex-col md:flex-row gap-4">
                 <div className="flex-1">
@@ -70,7 +203,7 @@ const Experience = () => {
                   {["Machine Learning", "Time Series", "Computer Vision", "Data Analysis", "Python"].map((skill, index) => (
                     <span 
                       key={index}
-                      className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                     >
                       {skill}
                     </span>

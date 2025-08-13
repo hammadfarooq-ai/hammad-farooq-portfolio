@@ -68,7 +68,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">Get In Touch</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-6">Hire Me</h3>
                 <div className="space-y-4">
                   {contactMethods.map((contact, index) => {
                     const IconComponent = contact.icon;
