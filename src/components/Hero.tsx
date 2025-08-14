@@ -59,14 +59,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-accent/30 hover:border-accent hover:bg-accent/10 px-8 py-4"
-              onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/lovable-uploads/a241e662-85f2-44a3-820f-31b01c146171.png';
-                link.download = 'Hammad_Farooq_Resume.png';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
+              onClick={() => window.open('https://drive.google.com/file/d/15jkLmdQI6hhu6423HrwvLN0Y1lIL0SzR/view?usp=drivesdk', '_blank')}
             >
               <Download className="mr-2 h-5 w-5" />
               Download Resume
