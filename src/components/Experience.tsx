@@ -1,217 +1,174 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, MapPin, Building } from "lucide-react";
+import { Calendar, MapPin, Building, Code, Trophy, Zap, Sparkles } from "lucide-react";
+
+const experiences = [
+  {
+    title: "Python Programming Intern",
+    company: "CodeAlpha",
+    period: "Oct 2024 - Jan 2025",
+    duration: "4 months",
+    location: "India (Remote)",
+    description: "Strengthened coding skills and enhanced problem-solving abilities through real-world Python projects during a 4-month intensive internship program.",
+    achievements: [
+      "Built a high-efficiency Python script for generating the Fibonacci series",
+      "Designed and deployed a student grade tracker for managing and calculating academic performance",
+      "Strengthened coding skills and enhanced problem-solving abilities through real-world projects"
+    ],
+    skills: ["Python", "Algorithm Design", "Data Structures", "Problem Solving", "Software Development"],
+    icon: Code,
+    gradient: "from-purple-500 via-pink-500 to-red-500",
+    bgGradient: "from-purple-50 via-pink-50 to-red-50"
+  },
+  {
+    title: "Fellow",
+    company: "Dev Weekends",
+    period: "Jun 2025 - Aug 2025",
+    duration: "3 months",
+    location: "Pakistan (Remote)",
+    description: "Focused fellowship program on mastering Data Structures & Algorithms and C++ programming, with emphasis on competitive programming and technical skill development.",
+    achievements: [
+      "Focused on mastering Data Structures & Algorithms (DSA) and C++",
+      "Applied problem-solving techniques to tackle competitive programming challenges",
+      "Expanded technical skills, which contributed to securing this role (thanks to LinkedIn)"
+    ],
+    skills: ["C++", "Data Structures", "Algorithms", "Competitive Programming", "Problem Solving", "LinkedIn Networking"],
+    icon: Trophy,
+    gradient: "from-blue-500 via-cyan-500 to-teal-500",
+    bgGradient: "from-blue-50 via-cyan-50 to-teal-50"
+  },
+  {
+    title: "Machine Learning Intern",
+    company: "Arch Technologies",
+    period: "Apr 2025 - May 2025",
+    duration: "2 months",
+    location: "Islamabad, Pakistan",
+    description: "Gained hands-on experience in machine learning and data science through practical projects and real-world applications.",
+    achievements: [
+      "Developed time series forecasting models to predict future trends and patterns",
+      "Built and optimized house price prediction models using regression techniques",
+      "Implemented image classification algorithms for computer vision applications"
+    ],
+    skills: ["Machine Learning", "Time Series", "Computer Vision", "Data Analysis", "Python"],
+    icon: Sparkles,
+    gradient: "from-green-500 via-emerald-500 to-cyan-500",
+    bgGradient: "from-green-50 via-emerald-50 to-cyan-50"
+  }
+];
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Experience
+    <section id="experience" className="py-20 bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50 dark:from-slate-900 dark:via-purple-900/20 dark:to-pink-900/20 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 bg-[url('/api/placeholder/1920/1080')] opacity-5 bg-fixed bg-cover bg-center"></div>
+      <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
+            <Zap className="h-5 w-5 text-primary" />
+            <span className="text-primary font-semibold">Professional Journey</span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+            Experience Timeline
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional experience in machine learning and data science
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            My professional journey through cutting-edge technology roles, building innovative solutions and expanding expertise
           </p>
         </div>
-        
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Python Programming Intern */}
-          <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in">
-            <CardHeader>
-              <div className="flex items-start justify-between flex-col md:flex-row gap-4">
-                <div className="flex-1">
-                  <CardTitle className="text-2xl text-foreground flex items-center gap-3 mb-2">
-                    <Building className="h-6 w-6 text-primary" />
-                    Python Programming Intern
-                  </CardTitle>
-                  <CardDescription className="text-lg text-primary font-semibold">
-                    CodeAlpha
-                  </CardDescription>
-                </div>
-                
-                <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4" />
-                    Oct 2024 - Jan 2025
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4" />
-                    India (Remote)
-                  </div>
-                </div>
-              </div>
-            </CardHeader>
-            
-            <CardContent>
-              <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  Strengthened coding skills and enhanced problem-solving abilities through real-world Python projects 
-                  during a 4-month intensive internship program.
-                </p>
-                
-                <div>
-                  <h4 className="font-semibold text-foreground mb-3">Key Projects & Achievements:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Built a high-efficiency Python script for generating the Fibonacci series</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Designed and deployed a student grade tracker for managing and calculating academic performance</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Strengthened coding skills and enhanced problem-solving abilities through real-world projects</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div className="flex flex-wrap gap-2 pt-4">
-                  {["Python", "Algorithm Design", "Data Structures", "Problem Solving", "Software Development"].map((skill, index) => (
-                    <span 
-                      key={index}
-                      className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
 
-          {/* Dev Weekends Fellow */}
-          <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <CardHeader>
-              <div className="flex items-start justify-between flex-col md:flex-row gap-4">
-                <div className="flex-1">
-                  <CardTitle className="text-2xl text-foreground flex items-center gap-3 mb-2">
-                    <Building className="h-6 w-6 text-accent" />
-                    Fellow
-                  </CardTitle>
-                  <CardDescription className="text-lg text-accent font-semibold">
-                    Dev Weekends
-                  </CardDescription>
-                </div>
-                
-                <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4" />
-                    Jun 2025 - Aug 2025
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4" />
-                    Pakistan (Remote)
-                  </div>
-                </div>
-              </div>
-            </CardHeader>
+        {/* Timeline Layout */}
+        <div className="relative max-w-6xl mx-auto">
+          {/* Timeline line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 via-pink-500 to-blue-500 rounded-full hidden lg:block"></div>
+          
+          {experiences.map((exp, index) => {
+            const IconComponent = exp.icon;
+            const isLeft = index % 2 === 0;
             
-            <CardContent>
-              <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  Focused fellowship program on mastering Data Structures & Algorithms and C++ programming, 
-                  with emphasis on competitive programming and technical skill development.
-                </p>
+            return (
+              <div key={index} className={`relative mb-16 lg:mb-24 animate-fade-in`} style={{animationDelay: `${index * 0.3}s`}}>
+                {/* Timeline dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-background border-4 border-primary rounded-full z-20 hidden lg:block shadow-lg"></div>
                 
-                <div>
-                  <h4 className="font-semibold text-foreground mb-3">Key Achievements & Focus Areas:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Focused on mastering Data Structures & Algorithms (DSA) and C++</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Applied problem-solving techniques to tackle competitive programming challenges</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Expanded technical skills, which contributed to securing this role (thanks to LinkedIn)</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div className="flex flex-wrap gap-2 pt-4">
-                  {["C++", "Data Structures", "Algorithms", "Competitive Programming", "Problem Solving", "LinkedIn Networking"].map((skill, index) => (
-                    <span 
-                      key={index}
-                      className="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                {/* Experience card */}
+                <div className={`lg:w-1/2 ${isLeft ? 'lg:pr-12' : 'lg:pl-12 lg:ml-auto'}`}>
+                  <div className={`group relative ${isLeft ? 'lg:-mr-6' : 'lg:-ml-6'}`}>
+                    {/* Arrow pointing to timeline */}
+                    <div className={`absolute top-8 ${isLeft ? 'right-0 border-l-primary' : 'left-0 border-r-primary'} w-0 h-0 border-t-8 border-b-8 border-t-transparent border-b-transparent ${isLeft ? 'border-l-8' : 'border-r-8'} hidden lg:block`}></div>
+                    
+                    <Card className={`bg-gradient-to-br ${exp.bgGradient} dark:from-slate-800/50 dark:via-slate-700/50 dark:to-slate-800/50 backdrop-blur-lg border-2 border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 overflow-hidden relative`}>
+                      {/* Floating icon */}
+                      <div className={`absolute -top-6 ${isLeft ? 'right-6' : 'left-6'} w-12 h-12 bg-gradient-to-r ${exp.gradient} rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                        <IconComponent className="h-6 w-6 text-white" />
+                      </div>
+                      
+                      {/* Decorative pattern */}
+                      <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${exp.gradient} opacity-10 rounded-bl-full`}></div>
+                      
+                      <CardHeader className="pb-4 pt-8">
+                        <div className="flex flex-col space-y-3">
+                          <CardTitle className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                            {exp.title}
+                          </CardTitle>
+                          <CardDescription className={`text-lg font-semibold bg-gradient-to-r ${exp.gradient} bg-clip-text text-transparent`}>
+                            {exp.company}
+                          </CardDescription>
+                          
+                          <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                            <div className="flex items-center gap-2">
+                              <Calendar className="h-4 w-4 text-primary" />
+                              <span>{exp.period}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <MapPin className="h-4 w-4 text-primary" />
+                              <span>{exp.location}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </CardHeader>
 
-          {/* Machine Learning Intern */}
-          <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <CardHeader>
-              <div className="flex items-start justify-between flex-col md:flex-row gap-4">
-                <div className="flex-1">
-                  <CardTitle className="text-2xl text-foreground flex items-center gap-3 mb-2">
-                    <Building className="h-6 w-6 text-primary" />
-                    Machine Learning Intern
-                  </CardTitle>
-                  <CardDescription className="text-lg text-primary font-semibold">
-                    Arch Technologies
-                  </CardDescription>
-                </div>
-                
-                <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4" />
-                    Apr 2025 - May 2025
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4" />
-                    Islamabad, Pakistan
+                      <CardContent>
+                        <p className="text-muted-foreground leading-relaxed mb-6">
+                          {exp.description}
+                        </p>
+
+                        <div className="space-y-6">
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-4 text-lg">Key Achievements:</h4>
+                            <ul className="space-y-3">
+                              {exp.achievements.map((achievement, achIndex) => (
+                                <li key={achIndex} className="flex items-start gap-3 group/item">
+                                  <div className={`w-2 h-2 bg-gradient-to-r ${exp.gradient} rounded-full mt-2 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-200`}></div>
+                                  <span className="text-muted-foreground group-hover/item:text-foreground transition-colors">
+                                    {achievement}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-4 text-lg">Technologies:</h4>
+                            <div className="flex flex-wrap gap-2">
+                              {exp.skills.map((skill, skillIndex) => (
+                                <span 
+                                  key={skillIndex}
+                                  className={`px-4 py-2 bg-gradient-to-r ${exp.gradient} text-white rounded-full text-sm font-medium hover:scale-110 transition-all duration-200 shadow-lg hover:shadow-xl cursor-default`}
+                                >
+                                  {skill}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   </div>
                 </div>
               </div>
-            </CardHeader>
-            
-            <CardContent>
-              <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  Gained hands-on experience in machine learning and data science through practical projects 
-                  and real-world applications.
-                </p>
-                
-                <div>
-                  <h4 className="font-semibold text-foreground mb-3">Key Projects & Achievements:</h4>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Developed time series forecasting models to predict future trends and patterns</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Built and optimized house price prediction models using regression techniques</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Implemented image classification algorithms for computer vision applications</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div className="flex flex-wrap gap-2 pt-4">
-                  {["Machine Learning", "Time Series", "Computer Vision", "Data Analysis", "Python"].map((skill, index) => (
-                    <span 
-                      key={index}
-                      className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+            );
+          })}
         </div>
       </div>
     </section>
