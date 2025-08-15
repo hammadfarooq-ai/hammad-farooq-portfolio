@@ -8,8 +8,8 @@ const contactMethods = [
     label: "Email",
     value: "hammadfarooq470@gmail.com",
     href: "mailto:hammadfarooq470@gmail.com",
-    color: "from-blue-500 to-cyan-500",
-    bgColor: "from-blue-50 to-cyan-50",
+    color: "from-teal-500 to-cyan-500",
+    bgColor: "from-teal-50 to-cyan-50",
     description: "Let's discuss your next project"
   },
   {
@@ -17,8 +17,8 @@ const contactMethods = [
     label: "Phone",
     value: "+92 3450710970",
     href: "tel:+923450710970",
-    color: "from-green-500 to-emerald-500",
-    bgColor: "from-green-50 to-emerald-50",
+    color: "from-lime-500 to-green-500",
+    bgColor: "from-lime-50 to-green-50",
     description: "Available for direct conversations"
   },
   {
@@ -26,8 +26,8 @@ const contactMethods = [
     label: "Location",
     value: "Lahore, Pakistan",
     href: "#",
-    color: "from-purple-500 to-pink-500",
-    bgColor: "from-purple-50 to-pink-50",
+    color: "from-rose-500 to-pink-500",
+    bgColor: "from-rose-50 to-pink-50",
     description: "Open to remote opportunities"
   }
 ];
@@ -64,12 +64,12 @@ const socialLinks = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 bg-gradient-hero relative overflow-hidden">
+    <section id="contact" className="py-32 bg-gradient-to-br from-gray-900 via-slate-800 to-zinc-900 text-white relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-      <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
-      <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-accent/15 rounded-full blur-3xl animate-float" style={{animationDelay: '3s'}}></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-lime-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-rose-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+      <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '3s'}}></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
@@ -77,10 +77,10 @@ const Contact = () => {
             <Heart className="h-5 w-5 text-primary animate-pulse" />
             <span className="text-primary font-semibold">Let's Connect</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-teal-400 via-lime-400 to-rose-400 bg-clip-text text-transparent">
             Let's Build Something Amazing
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Ready to collaborate on cutting-edge AI/ML projects? Let's turn your vision into reality with innovative solutions
           </p>
         </div>
@@ -174,7 +174,7 @@ const Contact = () => {
           
           {/* Call to Action - Hero Style */}
           <div className="text-center">
-            <Card className="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden relative group">
+            <Card className="bg-gradient-to-br from-teal-600 via-lime-600 to-rose-600 border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden relative group">
               {/* Animated background */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20 animate-pulse"></div>
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-pink-400 to-cyan-400"></div>

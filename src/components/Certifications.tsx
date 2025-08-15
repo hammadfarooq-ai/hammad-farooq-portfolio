@@ -8,8 +8,8 @@ const certifications = [
     issuer: "Microsoft",
     description: "Professional certification in AI and machine learning engineering practices",
     icon: "🚀",
-    color: "from-blue-500 to-cyan-500",
-    bgColor: "from-blue-50 to-cyan-50",
+    color: "from-sky-500 to-blue-500",
+    bgColor: "from-sky-50 to-blue-50",
     certificateUrl: "https://www.coursera.org/account/accomplishments/professional-cert/QFL9NO24AM7X",
     level: "Professional",
     featured: true
@@ -19,8 +19,8 @@ const certifications = [
     issuer: "University of Michigan",
     description: "Comprehensive specialization covering statistical analysis and data science with Python",
     icon: "📊",
-    color: "from-purple-500 to-pink-500",
-    bgColor: "from-purple-50 to-pink-50",
+    color: "from-fuchsia-500 to-pink-500",
+    bgColor: "from-fuchsia-50 to-pink-50",
     certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/AXVDK22Y3XT4",
     level: "Specialization",
     featured: true
@@ -30,8 +30,8 @@ const certifications = [
     issuer: "Google",
     description: "Professional certification covering data analysis techniques, tools, and best practices",
     icon: "📈",
-    color: "from-green-500 to-emerald-500",
-    bgColor: "from-green-50 to-emerald-50",
+    color: "from-lime-500 to-green-500",
+    bgColor: "from-lime-50 to-green-50",
     certificateUrl: "https://youtube.com/shorts/VDr08j2OlEM?si=E8Nl6Hip42GHiXfr",
     level: "Professional",
     featured: true
@@ -87,11 +87,11 @@ const Certifications = () => {
   const otherCerts = certifications.filter(cert => !cert.featured);
 
   return (
-    <section id="certifications" className="py-32 bg-gradient-hero relative overflow-hidden">
+    <section id="certifications" className="py-32 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-900/30 dark:via-purple-900/30 dark:to-pink-900/30 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
-      <div className="absolute top-1/3 left-1/3 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '2.5s'}}></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-sky-500/20 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-fuchsia-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute top-1/3 left-1/3 w-72 h-72 bg-lime-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2.5s'}}></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
@@ -99,7 +99,7 @@ const Certifications = () => {
             <Shield className="h-5 w-5 text-primary" />
             <span className="text-primary font-semibold">Verified Credentials</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-sky-600 via-fuchsia-600 to-lime-600 bg-clip-text text-transparent">
             Certifications & Achievements
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">

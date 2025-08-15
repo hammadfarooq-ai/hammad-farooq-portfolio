@@ -16,8 +16,8 @@ const experiences = [
     ],
     skills: ["Python", "Algorithm Design", "Data Structures", "Problem Solving", "Software Development"],
     icon: Code,
-    gradient: "from-purple-500 via-pink-500 to-red-500",
-    bgGradient: "from-purple-50 via-pink-50 to-red-50"
+    gradient: "from-cyan-500 via-blue-500 to-indigo-500",
+    bgGradient: "from-cyan-50 via-blue-50 to-indigo-50"
   },
   {
     title: "Fellow",
@@ -33,8 +33,8 @@ const experiences = [
     ],
     skills: ["C++", "Data Structures", "Algorithms", "Competitive Programming", "Problem Solving", "LinkedIn Networking"],
     icon: Trophy,
-    gradient: "from-blue-500 via-cyan-500 to-teal-500",
-    bgGradient: "from-blue-50 via-cyan-50 to-teal-50"
+    gradient: "from-emerald-500 via-teal-500 to-green-500",
+    bgGradient: "from-emerald-50 via-teal-50 to-green-50"
   },
   {
     title: "Machine Learning Intern",
@@ -50,18 +50,18 @@ const experiences = [
     ],
     skills: ["Machine Learning", "Time Series", "Computer Vision", "Data Analysis", "Python"],
     icon: Sparkles,
-    gradient: "from-green-500 via-emerald-500 to-cyan-500",
-    bgGradient: "from-green-50 via-emerald-50 to-cyan-50"
+    gradient: "from-violet-500 via-purple-500 to-fuchsia-500",
+    bgGradient: "from-violet-50 via-purple-50 to-fuchsia-50"
   }
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-32 bg-gradient-hero relative overflow-hidden">
+    <section id="experience" className="py-32 bg-gradient-to-br from-slate-50 via-zinc-100 to-stone-100 dark:from-zinc-900 dark:via-slate-900 dark:to-gray-900 relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-10 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
-      <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '3s'}}></div>
+      <div className="absolute top-10 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+      <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-violet-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '3s'}}></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
@@ -69,7 +69,7 @@ const Experience = () => {
             <Zap className="h-5 w-5 text-primary" />
             <span className="text-primary font-semibold">Professional Journey</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-600 via-emerald-600 to-violet-600 bg-clip-text text-transparent">
             Experience Timeline
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -80,7 +80,7 @@ const Experience = () => {
         {/* Timeline Layout */}
         <div className="relative max-w-6xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 via-pink-500 to-blue-500 rounded-full hidden lg:block"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-cyan-500 via-emerald-500 to-violet-500 rounded-full hidden lg:block"></div>
           
           {experiences.map((exp, index) => {
             const IconComponent = exp.icon;
