@@ -49,11 +49,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32 bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden">
+    <section id="projects" className="py-32 bg-gradient-hero relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-32 right-32 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-32 right-32 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">

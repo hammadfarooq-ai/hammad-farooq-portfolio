@@ -87,10 +87,11 @@ const Certifications = () => {
   const otherCerts = certifications.filter(cert => !cert.featured);
 
   return (
-    <section id="certifications" className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 dark:from-amber-900/10 dark:via-orange-900/10 dark:to-red-900/10 relative overflow-hidden">
+    <section id="certifications" className="py-32 bg-gradient-hero relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-yellow-400/10 to-orange-400/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-red-400/10 to-pink-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute top-1/3 left-1/3 w-72 h-72 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '2.5s'}}></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
