@@ -4,108 +4,121 @@ import { ArrowDown, Download, Github, Linkedin, Mail, X } from "lucide-react";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
-      {/* Animated background elements */}
+      {/* Enhanced Animated background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+        
+        {/* Floating particles */}
+        <div className="absolute top-20 right-20 w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 left-16 w-1 h-1 bg-secondary rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-tertiary rounded-full animate-ping" style={{ animationDelay: '3.5s' }}></div>
       </div>
       
       <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
-          {/* Profile Image */}
-          <div className="mb-8">
+        <div className="max-w-5xl mx-auto text-center animate-fade-in-up">
+          {/* Enhanced Profile Image */}
+          <div className="mb-12 relative">
+            <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-30 scale-110 animate-pulse"></div>
             <img 
               src="/lovable-uploads/5d0edc09-0a72-4e82-bcc1-887e894d55f3.png"
-              alt="Hammad Farooq"
-              className="w-40 h-40 mx-auto rounded-full shadow-glow border-4 border-primary/30 hover:border-primary/60 transition-all duration-300 animate-glow"
+              alt="Hammad Farooq - AI/ML Engineer"
+              className="w-48 h-48 mx-auto rounded-full shadow-elevated border-4 border-primary/40 hover:border-primary/80 transition-all duration-500 hover:scale-105 relative z-10 glass-card"
             />
           </div>
 
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          {/* Modern heading with enhanced typography */}
+          <h1 className="text-6xl md:text-8xl font-black mb-8 text-gradient-primary leading-tight tracking-tight">
             Hammad Farooq
           </h1>
           
-          <p className="text-2xl md:text-3xl text-muted-foreground mb-4">
-            AI/ML Engineer & Data Scientist
-          </p>
+          <div className="mb-6">
+            <p className="text-3xl md:text-4xl font-bold text-gradient-secondary mb-4">
+              AI/ML Engineer & Data Scientist
+            </p>
+            <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          </div>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-light">
             Aspiring AI/ML Engineer with hands-on experience in building ML models and real-world AI projects. 
             Currently pursuing a BS in Data Science at Virtual University of Pakistan.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-glow transition-all duration-300 px-8 py-4"
+              className="bg-gradient-primary hover:shadow-primary hover:scale-105 transition-all duration-500 px-10 py-6 text-lg font-semibold rounded-2xl"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              <Mail className="mr-2 h-5 w-5" />
+              <Mail className="mr-3 h-6 w-6" />
               Hire Me
             </Button>
             
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary/30 hover:border-primary hover:bg-primary/10 px-8 py-4"
+              className="glass-button hover:shadow-secondary hover:scale-105 transition-all duration-500 px-10 py-6 text-lg font-semibold rounded-2xl border-2 border-secondary/30 hover:border-secondary"
               onClick={() => window.open('https://github.com/hammadfarooq-ai', '_blank')}
             >
-              <Github className="mr-2 h-5 w-5" />
+              <Github className="mr-3 h-6 w-6" />
               View Projects
             </Button>
 
             <Button 
               variant="outline" 
               size="lg"
-              className="border-accent/30 hover:border-accent hover:bg-accent/10 px-8 py-4"
+              className="glass-button hover:shadow-tertiary hover:scale-105 transition-all duration-500 px-10 py-6 text-lg font-semibold rounded-2xl border-2 border-tertiary/30 hover:border-tertiary"
               onClick={() => window.open('https://drive.google.com/file/d/15jkLmdQI6hhu6423HrwvLN0Y1lIL0SzR/view?usp=drivesdk', '_blank')}
             >
-              <Download className="mr-2 h-5 w-5" />
+              <Download className="mr-3 h-6 w-6" />
               Download Resume
             </Button>
           </div>
           
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-12">
+          {/* Enhanced Social Links */}
+          <div className="flex justify-center space-x-8 mb-16">
             <a 
               href="https://www.linkedin.com/in/hammadfarooq-ai/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transform duration-200"
+              className="glass-card p-4 rounded-2xl hover:shadow-primary hover:scale-110 transform transition-all duration-300 group"
             >
-              <Linkedin className="h-6 w-6" />
+              <Linkedin className="h-7 w-7 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a 
               href="https://github.com/hammadfarooq-ai" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transform duration-200"
+              className="glass-card p-4 rounded-2xl hover:shadow-secondary hover:scale-110 transform transition-all duration-300 group"
             >
-              <Github className="h-6 w-6" />
+              <Github className="h-7 w-7 text-muted-foreground group-hover:text-secondary transition-colors" />
             </a>
             <a 
               href="https://x.com/HammadFarooq470" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transform duration-200"
+              className="glass-card p-4 rounded-2xl hover:shadow-tertiary hover:scale-110 transform transition-all duration-300 group"
             >
-              <X className="h-6 w-6" />
+              <X className="h-7 w-7 text-muted-foreground group-hover:text-tertiary transition-colors" />
             </a>
             <a 
               href="mailto:hammadfarooq470@gmail.com"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transform duration-200"
+              className="glass-card p-4 rounded-2xl hover:shadow-accent hover:scale-110 transform transition-all duration-300 group"
             >
-              <Mail className="h-6 w-6" />
+              <Mail className="h-7 w-7 text-muted-foreground group-hover:text-accent transition-colors" />
             </a>
           </div>
           
-          {/* Scroll indicator */}
+          {/* Enhanced Scroll indicator */}
           <div 
-            className="cursor-pointer animate-bounce"
+            className="cursor-pointer animate-bounce hover:scale-125 transition-transform duration-300"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <ArrowDown className="h-8 w-8 mx-auto text-primary" />
+            <div className="glass-card p-4 rounded-full hover:shadow-glow">
+              <ArrowDown className="h-8 w-8 mx-auto text-gradient-primary" />
+            </div>
           </div>
         </div>
       </div>
