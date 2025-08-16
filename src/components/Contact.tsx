@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Github, Linkedin, Trophy, ExternalLink, Heart, MessageCircle, Send, Zap } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Trophy, ExternalLink, Heart, MessageCircle, Send, Zap, Facebook } from "lucide-react";
 
 const contactMethods = [
   {
@@ -50,6 +50,15 @@ const socialLinks = [
     color: "from-gray-700 to-gray-900",
     bgColor: "from-gray-50 to-gray-100",
     description: "Code repositories & projects"
+  },
+  {
+    icon: Facebook,
+    label: "Facebook",
+    value: "hammadfarooq.ml",
+    href: "https://web.facebook.com/hammadfarooq.ml/",
+    color: "from-blue-500 to-indigo-600",
+    bgColor: "from-blue-50 to-indigo-100",
+    description: "Personal updates & community"
   },
   {
     icon: Trophy,
