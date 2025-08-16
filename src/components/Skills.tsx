@@ -117,17 +117,17 @@ const Skills = () => {
           <div className="inline-flex items-center gap-8 bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg rounded-2xl px-8 py-6 shadow-xl border border-white/20">
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">20+</div>
-              <div className="text-sm text-slate-300">Technologies</div>
+              <div className="text-sm text-emerald-300 font-semibold">Technologies</div>
             </div>
             <div className="w-px h-12 bg-gradient-to-b from-transparent via-muted-foreground/20 to-transparent"></div>
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent">4</div>
-              <div className="text-sm text-slate-300">Categories</div>
+              <div className="text-sm text-rose-300 font-semibold">Categories</div>
             </div>
             <div className="w-px h-12 bg-gradient-to-b from-transparent via-muted-foreground/20 to-transparent"></div>
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-to-r from-violet-400 to-purple-400 bg-clip-text text-transparent">∞</div>
-              <div className="text-sm text-slate-300">Learning</div>
+              <div className="text-sm text-violet-300 font-semibold">Learning</div>
             </div>
           </div>
         </div>
