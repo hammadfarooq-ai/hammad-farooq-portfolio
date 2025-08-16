@@ -94,10 +94,10 @@ const Skills = () => {
                           key={skillIndex}
                           className="group/skill relative"
                         >
-                          <div 
-                            className={`px-4 py-3 bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm text-foreground rounded-xl text-sm font-medium text-center border border-white/40 hover:bg-gradient-to-r hover:${category.color} hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-default`}
-                            style={{animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s`}}
-                          >
+                           <div 
+                             className={`px-4 py-3 bg-gradient-to-r ${category.color} text-white backdrop-blur-sm rounded-xl text-sm font-bold text-center border border-white/40 hover:scale-105 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 cursor-default`}
+                             style={{animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s`}}
+                           >
                             {skill}
                             {/* Shimmer effect */}
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 opacity-0 group-hover/skill:opacity-100 group-hover/skill:animate-[shimmer_0.8s_ease-in-out] rounded-xl"></div>
