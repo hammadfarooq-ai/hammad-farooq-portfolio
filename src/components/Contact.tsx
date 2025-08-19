@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Github, Linkedin, Trophy, ExternalLink, Heart, MessageCircle, Send, Zap, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Trophy, ExternalLink, Heart, MessageCircle, Send, Zap, Facebook, BookOpen } from "lucide-react";
 
 const contactMethods = [
   {
@@ -59,6 +59,15 @@ const socialLinks = [
     color: "from-blue-500 to-indigo-600",
     bgColor: "from-blue-50 to-indigo-100",
     description: "Personal updates & community"
+  },
+  {
+    icon: BookOpen,
+    label: "Medium",
+    value: "hammadfarooq470",
+    href: "https://medium.com/@hammadfarooq470",
+    color: "from-emerald-500 to-teal-600",
+    bgColor: "from-emerald-50 to-teal-50",
+    description: "Technical articles & insights"
   },
   {
     icon: Trophy,

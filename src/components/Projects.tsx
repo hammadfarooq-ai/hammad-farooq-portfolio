@@ -110,24 +110,15 @@ const Projects = () => {
                     ))}
                   </div>
                   
-                  <div className="flex gap-4">
+                  <div className="flex justify-center">
                     <Button 
                       variant="outline" 
                       size="sm"
-                      className="flex-1 glass-button border-2 border-secondary/30 hover:border-secondary hover:shadow-secondary transition-all duration-300 rounded-xl"
+                      className="w-full glass-button border-2 border-secondary/30 hover:border-secondary hover:shadow-secondary transition-all duration-300 rounded-xl"
                       onClick={() => window.open(project.githubUrl, '_blank')}
                     >
                       <Github className="mr-2 h-5 w-5" />
-                      Code
-                    </Button>
-                    
-                    <Button 
-                      size="sm"
-                      className="flex-1 bg-gradient-primary hover:shadow-primary hover:scale-105 transition-all duration-300 rounded-xl"
-                      onClick={() => window.open(project.githubUrl, '_blank')}
-                    >
-                      <ExternalLink className="mr-2 h-5 w-5" />
-                      View
+                      View Code
                     </Button>
                   </div>
                 </CardContent>
