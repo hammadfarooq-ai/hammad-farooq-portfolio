@@ -3,6 +3,24 @@ import { Calendar, MapPin, Building, Code, Trophy, Zap, Sparkles } from "lucide-
 
 const experiences = [
   {
+    title: "Kaggle Contributor",
+    company: "Kaggle · Self-employed",
+    period: "May 2025 - Present",
+    duration: "Ongoing",
+    location: "Global (Remote)",
+    description: "Contributing to the global data science community through comprehensive projects, competitions, and educational content on Kaggle platform.",
+    achievements: [
+      "Created multiple Kaggle Notebooks showcasing projects in data analysis, visualization, and machine learning",
+      "Participated in Kaggle Competitions, applying algorithms like regression, classification, and deep learning for real-world datasets",
+      "Contributed to Kaggle Discussions, collaborating with the global data science community to share insights and solutions",
+      "Completed Kaggle courses in Machine Learning, Data Visualization, Python, and SQL, while actively strengthening foundations in AI and ML"
+    ],
+    skills: ["Machine Learning", "Data Analysis", "Data Visualization", "Python", "SQL", "Deep Learning", "Regression", "Classification"],
+    icon: Zap,
+    gradient: "from-orange-500 via-red-500 to-pink-500",
+    bgGradient: "from-orange-50 via-red-50 to-pink-50"
+  },
+  {
     title: "Python Programming Intern",
     company: "CodeAlpha",
     period: "Oct 2024 - Jan 2025",
