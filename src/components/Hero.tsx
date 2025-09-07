@@ -70,7 +70,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="glass-button hover:shadow-tertiary hover:scale-105 transition-all duration-500 px-10 py-6 text-lg font-semibold rounded-2xl border-2 border-tertiary/30 hover:border-tertiary"
-              onClick={() => window.open('https://drive.google.com/file/d/15jkLmdQI6hhu6423HrwvLN0Y1lIL0SzR/view?usp=drivesdk', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1QVhllW68AxCf6qI9OBLR_sBigWfJwnbZ/view?usp=drive_link', '_blank')}
             >
               <Download className="mr-3 h-6 w-6" />
               Download Resume
