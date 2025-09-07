@@ -23,9 +23,9 @@ const Hero = () => {
           <div className="mb-12 relative">
             <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-30 scale-110 animate-pulse"></div>
             <img 
-              src="/lovable-uploads/5d0edc09-0a72-4e82-bcc1-887e894d55f3.png"
+              src="/lovable-uploads/b872f8af-ffe8-4c32-bb1f-ed6c7b1e9342.png"
               alt="Hammad Farooq - AI/ML Engineer"
-              className="w-48 h-48 mx-auto rounded-full shadow-elevated border-4 border-primary/40 hover:border-primary/80 transition-all duration-500 hover:scale-105 relative z-10 glass-card"
+              className="w-48 h-48 mx-auto rounded-full shadow-elevated border-4 border-primary/40 hover:border-primary/80 transition-all duration-500 hover:scale-105 relative z-10 glass-card object-cover"
             />
           </div>
 

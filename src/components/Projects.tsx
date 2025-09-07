@@ -1,49 +1,65 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink, Github } from "lucide-react";
 
-const projects = [
+const machineLearningProjects = [
   {
     title: "Titanic Survival Prediction",
     description: "Machine learning project predicting passenger survival on the Titanic using Random Forest classifier. Includes data exploration, feature engineering with one-hot encoding, and Kaggle competition submission workflow with comprehensive data analysis.",
     tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Random Forest", "Kaggle API"],
-    githubUrl: "https://github.com/hammadfarooq-ai/Titanic-Survival-Prediction",
-    demoUrl: "#"
+    githubUrl: "https://github.com/hammadfarooq-ai/Titanic-Survival-Prediction"
   },
   {
-    title: "Covid-19 Data Analysis Project",
-    description: "Comprehensive vaccination data analysis project focusing on processing Excel datasets, cleaning inconsistent data, and generating interactive visualizations for gender-based and age-specific vaccination trends. Includes data transformation and CSV export functionality.",
-    tech: ["Python", "Pandas", "Plotly", "Excel", "CSV", "Data Visualization"],
-    githubUrl: "https://github.com/hammadfarooq-ai/Covid-19-Data-Analysis-Project",
-    demoUrl: "#"
-  },
-  {
-    title: "Loan Prediction Model",
+    title: "Loan Default Prediction",
     description: "Developed a machine learning model to predict loan default risk using comprehensive data analysis and feature engineering. Implemented multiple algorithms for accurate risk assessment in financial lending.",
     tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
-    githubUrl: "https://github.com/hammadfarooq-ai/loan_default_prediction",
-    demoUrl: "#"
+    githubUrl: "https://github.com/hammadfarooq-ai/loan_default_prediction"
   },
   {
     title: "House Price Prediction",
     description: "Built a regression model using Scikit-learn and Pandas to predict house prices based on various features. Implemented data preprocessing, feature engineering, and model evaluation techniques.",
     tech: ["Python", "Scikit-learn", "Pandas", "Regression"],
-    githubUrl: "https://github.com/hammadfarooq-ai/House-Price-Prediction-",
-    demoUrl: "#"
+    githubUrl: "https://github.com/hammadfarooq-ai/House-Price-Prediction-"
   },
   {
     title: "MNIST Digit Classification & Custom Dataset",
     description: "Developed classifiers using TensorFlow & Keras for both MNIST digit recognition and custom dataset classification. Achieved high accuracy with deep learning techniques.",
     tech: ["TensorFlow", "Keras", "Deep Learning", "CNN"],
-    githubUrl: "https://github.com/hammadfarooq-ai/Classification-Fundamentals-and-MNIST-Digit-Recognition",
-    demoUrl: "#"
+    githubUrl: "https://github.com/hammadfarooq-ai/Classification-Fundamentals-and-MNIST-Digit-Recognition"
   },
   {
     title: "Brain Tumor Detection",
     description: "Used YOLO & SAM for object detection and segmentation to identify brain tumors in medical images. Implemented state-of-the-art computer vision algorithms for healthcare applications.",
     tech: ["YOLO", "SAM", "OpenCV", "Computer Vision"],
-    githubUrl: "https://github.com/hammadfarooq-ai/Brain_Tumor_Detection",
-    demoUrl: "#"
+    githubUrl: "https://github.com/hammadfarooq-ai/Brain_Tumor_Detection"
+  }
+];
+
+const dataScienceProjects = [
+  {
+    title: "Covid-19 Data Analysis Project",
+    description: "Comprehensive vaccination data analysis project focusing on processing Excel datasets, cleaning inconsistent data, and generating interactive visualizations for gender-based and age-specific vaccination trends. Includes data transformation and CSV export functionality.",
+    tech: ["Python", "Pandas", "Plotly", "Excel", "CSV", "Data Visualization"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Covid-19-Data-Analysis-Project"
+  }
+];
+
+const aiProjects = [
+  {
+    title: "LangChain AI Chatbot Lab",
+    description: "Advanced AI chatbot implementation using LangChain framework. Features natural language processing, conversation memory, and integration with various AI models for intelligent responses.",
+    tech: ["Python", "LangChain", "AI", "NLP", "Chatbot"],
+    githubUrl: "https://github.com/hammadfarooq-ai/LangChain-AI-Chatbot-Lab"
+  }
+];
+
+const pythonProjects = [
+  {
+    title: "Snake Game",
+    description: "Classic Snake game implementation in Python using Pygame. Features smooth gameplay, score tracking, collision detection, and interactive controls.",
+    tech: ["Python", "Pygame", "Game Development"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Snake-Game"
   }
 ];
 
@@ -71,63 +87,113 @@ const Projects = () => {
           </p>
         </div>
         
-        {/* Masonry-style grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-8 max-w-7xl mx-auto space-y-8">
-          {projects.map((project, index) => (
-            <div 
-              key={index} 
-              className="break-inside-avoid mb-8 animate-fade-in hover-lift"
-              style={{animationDelay: `${index * 0.2}s`}}
+        <Tabs defaultValue="machine-learning" className="w-full max-w-7xl mx-auto">
+          <TabsList className="grid w-full grid-cols-4 glass-card p-2 h-auto mb-12">
+            <TabsTrigger 
+              value="machine-learning" 
+              className="text-base font-semibold py-4 data-[state=active]:bg-gradient-primary data-[state=active]:text-white rounded-xl"
             >
-              <Card className="glass-card hover:shadow-elevated transition-all duration-500 group overflow-hidden border-2 border-primary/20 hover:border-primary/50">
-                {/* Gradient header */}
-                <div className={`h-2 ${index % 3 === 0 ? 'bg-gradient-primary' : index % 3 === 1 ? 'bg-gradient-secondary' : 'bg-gradient-tertiary'}`}></div>
-                
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl font-bold text-foreground group-hover:text-gradient-primary transition-all duration-300">
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed text-base">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-                
-                <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-8">
-                    {project.tech.map((tech, techIndex) => (
-                      <span 
-                        key={techIndex}
-                        className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 ${
-                          techIndex % 3 === 0 
-                            ? 'bg-primary/20 text-primary border border-primary/30' 
-                            : techIndex % 3 === 1 
-                            ? 'bg-secondary/20 text-secondary border border-secondary/30'
-                            : 'bg-tertiary/20 text-tertiary border border-tertiary/30'
-                        }`}
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex justify-center">
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="w-full glass-button border-2 border-secondary/30 hover:border-secondary hover:shadow-secondary transition-all duration-300 rounded-xl"
-                      onClick={() => window.open(project.githubUrl, '_blank')}
-                    >
-                      <Github className="mr-2 h-5 w-5" />
-                      View Code
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          ))}
-        </div>
+              Machine Learning
+            </TabsTrigger>
+            <TabsTrigger 
+              value="data-science" 
+              className="text-base font-semibold py-4 data-[state=active]:bg-gradient-secondary data-[state=active]:text-white rounded-xl"
+            >
+              Data Science
+            </TabsTrigger>
+            <TabsTrigger 
+              value="ai-projects" 
+              className="text-base font-semibold py-4 data-[state=active]:bg-gradient-tertiary data-[state=active]:text-white rounded-xl"
+            >
+              AI Projects
+            </TabsTrigger>
+            <TabsTrigger 
+              value="python-projects" 
+              className="text-base font-semibold py-4 data-[state=active]:bg-gradient-accent data-[state=active]:text-white rounded-xl"
+            >
+              Python Projects
+            </TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="machine-learning">
+            <ProjectGrid projects={machineLearningProjects} />
+          </TabsContent>
+          
+          <TabsContent value="data-science">
+            <ProjectGrid projects={dataScienceProjects} />
+          </TabsContent>
+          
+          <TabsContent value="ai-projects">
+            <ProjectGrid projects={aiProjects} />
+          </TabsContent>
+          
+          <TabsContent value="python-projects">
+            <ProjectGrid projects={pythonProjects} />
+          </TabsContent>
+        </Tabs>
       </div>
     </section>
+  );
+};
+
+const ProjectGrid = ({ projects }: { projects: any[] }) => {
+  return (
+    <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+      {projects.map((project, index) => (
+        <div 
+          key={index} 
+          className="break-inside-avoid mb-8 animate-fade-in hover-lift"
+          style={{animationDelay: `${index * 0.2}s`}}
+        >
+          <Card className="glass-card hover:shadow-elevated transition-all duration-500 group overflow-hidden border-2 border-primary/20 hover:border-primary/50">
+            {/* Gradient header */}
+            <div className={`h-2 ${index % 4 === 0 ? 'bg-gradient-primary' : index % 4 === 1 ? 'bg-gradient-secondary' : index % 4 === 2 ? 'bg-gradient-tertiary' : 'bg-gradient-accent'}`}></div>
+            
+            <CardHeader className="pb-4">
+              <CardTitle className="text-2xl font-bold text-foreground group-hover:text-gradient-primary transition-all duration-300">
+                {project.title}
+              </CardTitle>
+              <CardDescription className="text-muted-foreground leading-relaxed text-base">
+                {project.description}
+              </CardDescription>
+            </CardHeader>
+            
+            <CardContent>
+              <div className="flex flex-wrap gap-2 mb-8">
+                {project.tech.map((tech, techIndex) => (
+                  <span 
+                    key={techIndex}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 ${
+                      techIndex % 4 === 0 
+                        ? 'bg-primary/20 text-primary border border-primary/30' 
+                        : techIndex % 4 === 1 
+                        ? 'bg-secondary/20 text-secondary border border-secondary/30'
+                        : techIndex % 4 === 2
+                        ? 'bg-tertiary/20 text-tertiary border border-tertiary/30'
+                        : 'bg-accent/20 text-accent border border-accent/30'
+                    }`}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              
+              <div className="flex justify-center">
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  className="w-full glass-button border-2 border-secondary/30 hover:border-secondary hover:shadow-secondary transition-all duration-300 rounded-xl"
+                  onClick={() => window.open(project.githubUrl, '_blank')}
+                >
+                  <Github className="mr-2 h-5 w-5" />
+                  View Code
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      ))}
+    </div>
   );
 };
 
