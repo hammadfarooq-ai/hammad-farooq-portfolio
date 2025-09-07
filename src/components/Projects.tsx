@@ -42,6 +42,12 @@ const dataScienceProjects = [
     description: "Comprehensive vaccination data analysis project focusing on processing Excel datasets, cleaning inconsistent data, and generating interactive visualizations for gender-based and age-specific vaccination trends. Includes data transformation and CSV export functionality.",
     tech: ["Python", "Pandas", "Plotly", "Excel", "CSV", "Data Visualization"],
     githubUrl: "https://github.com/hammadfarooq-ai/Covid-19-Data-Analysis-Project"
+  },
+  {
+    title: "Life Expectancy Data Analysis",
+    description: "Comprehensive data analysis project examining global life expectancy trends using statistical methods and data visualization. Explores correlations between various health, economic, and social factors affecting life expectancy worldwide.",
+    tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Statistical Analysis"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Life_Expectancy_Data_Analysis"
   }
 ];
 
@@ -51,6 +57,12 @@ const aiProjects = [
     description: "Advanced AI chatbot implementation using LangChain framework. Features natural language processing, conversation memory, and integration with various AI models for intelligent responses.",
     tech: ["Python", "LangChain", "AI", "NLP", "Chatbot"],
     githubUrl: "https://github.com/hammadfarooq-ai/LangChain-AI-Chatbot-Lab"
+  },
+  {
+    title: "Realtime AI Voice Bot",
+    description: "Real-time voice interaction AI bot with speech recognition and synthesis capabilities. Features live conversation processing, voice command recognition, and natural language responses.",
+    tech: ["Python", "AI", "Speech Recognition", "Voice Synthesis", "Real-time Processing"],
+    githubUrl: "https://github.com/hammadfarooq-ai/realtime-ai-voice-bot"
   }
 ];
 
