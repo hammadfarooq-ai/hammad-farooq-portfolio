@@ -17,6 +17,12 @@ const machineLearningProjects = [
     githubUrl: "https://github.com/hammadfarooq-ai/loan_default_prediction"
   },
   {
+    title: "Face Detection OpenCV",
+    description: "Computer vision project implementing real-time face detection using OpenCV library. Features advanced image processing techniques and machine learning algorithms for accurate facial recognition in various lighting conditions.",
+    tech: ["Python", "OpenCV", "Computer Vision", "Image Processing", "Machine Learning"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Face-Detection-OpenCV"
+  },
+  {
     title: "House Price Prediction",
     description: "Built a regression model using Scikit-learn and Pandas to predict house prices based on various features. Implemented data preprocessing, feature engineering, and model evaluation techniques.",
     tech: ["Python", "Scikit-learn", "Pandas", "Regression"],
@@ -72,6 +78,12 @@ const pythonProjects = [
     description: "Classic Snake game implementation in Python using Pygame. Features smooth gameplay, score tracking, collision detection, and interactive controls.",
     tech: ["Python", "Pygame", "Game Development"],
     githubUrl: "https://github.com/hammadfarooq-ai/Snake-Game"
+  },
+  {
+    title: "Markdown To HTML Converter",
+    description: "Utility tool that converts Markdown files to HTML format with custom styling options. Features syntax highlighting, responsive design, and batch processing capabilities for documentation generation.",
+    tech: ["Python", "HTML", "CSS", "Markdown", "File Processing"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Md2html"
   }
 ];
 
