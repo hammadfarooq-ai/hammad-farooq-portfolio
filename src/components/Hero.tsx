@@ -3,18 +3,48 @@ import { ArrowDown, Download, Github, Linkedin, Mail, X } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
-      {/* Enhanced Animated background */}
-      <div className="absolute inset-0 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      {/* Animated Tech Background */}
+      <div className="absolute inset-0 z-0">
+        {/* Neural Network Lines */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent animate-pulse"></div>
+          <div className="absolute top-1/4 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-secondary/40 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-tertiary/30 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-3/4 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-accent/40 to-transparent animate-pulse" style={{ animationDelay: '3s' }}></div>
+          <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent animate-pulse" style={{ animationDelay: '4s' }}></div>
+          
+          {/* Vertical lines */}
+          <div className="absolute left-0 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-primary/30 to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute left-1/4 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-secondary/25 to-transparent animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute left-1/2 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-tertiary/20 to-transparent animate-pulse" style={{ animationDelay: '2.5s' }}></div>
+          <div className="absolute left-3/4 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-accent/25 to-transparent animate-pulse" style={{ animationDelay: '3.5s' }}></div>
+          <div className="absolute right-0 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-primary/20 to-transparent animate-pulse" style={{ animationDelay: '4.5s' }}></div>
+        </div>
+        
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+
+      {/* Enhanced Animated background overlay */}
+      <div className="absolute inset-0 overflow-hidden z-1">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
         <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
         
-        {/* Floating particles */}
+        {/* Matrix-style flowing data */}
+        <div className="absolute top-10 left-10 text-primary/30 text-xs font-mono animate-pulse">01101001</div>
+        <div className="absolute top-32 right-20 text-secondary/25 text-xs font-mono animate-pulse" style={{ animationDelay: '1s' }}>11010110</div>
+        <div className="absolute bottom-40 left-1/4 text-tertiary/20 text-xs font-mono animate-pulse" style={{ animationDelay: '2s' }}>10011001</div>
+        <div className="absolute bottom-20 right-1/3 text-accent/25 text-xs font-mono animate-pulse" style={{ animationDelay: '3s' }}>01110101</div>
+        
+        {/* Enhanced Floating particles */}
         <div className="absolute top-20 right-20 w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-32 left-16 w-1 h-1 bg-secondary rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-tertiary rounded-full animate-ping" style={{ animationDelay: '3.5s' }}></div>
+        <div className="absolute top-2/3 left-1/5 w-1 h-1 bg-accent rounded-full animate-ping" style={{ animationDelay: '4.5s' }}></div>
+        <div className="absolute bottom-1/3 right-1/5 w-2 h-2 bg-primary/50 rounded-full animate-ping" style={{ animationDelay: '5s' }}></div>
       </div>
       
       <div className="container mx-auto px-6 py-20 relative z-10">
