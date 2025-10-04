@@ -32,7 +32,7 @@ const certifications = [
     icon: "📈",
     color: "from-lime-500 to-green-500",
     bgColor: "from-lime-50 to-green-50",
-    certificateUrl: "https://youtube.com/shorts/VDr08j2OlEM?si=E8Nl6Hip42GHiXfr",
+    certificateUrl: "https://www.coursera.org/account/accomplishments/professional-cert/D32XJ0I0RNJ4",
     level: "Professional",
     featured: true
   },
