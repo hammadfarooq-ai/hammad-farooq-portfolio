@@ -20,19 +20,19 @@ const experiences = [
     bgGradient: "from-blue-50 via-indigo-50 to-purple-50"
   },
   {
-    title: "Kaggle Contributor",
+    title: "Kaggle Expert & Contributor",
     company: "Kaggle · Self-employed",
     period: "May 2025 - Present",
-    duration: "Ongoing",
-    location: "Global (Remote)",
-    description: "Contributing to the global data science community through comprehensive projects, competitions, and educational content on Kaggle platform.",
+    duration: "7 months",
+    location: "Remote",
+    description: "Recognized as both Dataset Expert and Notebook Expert while actively contributing to the global data science community through high-quality projects, datasets, and educational content.",
     achievements: [
-      "Created multiple Kaggle Notebooks showcasing projects in data analysis, visualization, and machine learning",
-      "Participated in Kaggle Competitions, applying algorithms like regression, classification, and deep learning for real-world datasets",
-      "Contributed to Kaggle Discussions, collaborating with the global data science community to share insights and solutions",
-      "Completed Kaggle courses in Machine Learning, Data Visualization, Python, and SQL, while actively strengthening foundations in AI and ML"
+      "Dataset Expert (Nov 2025 - Present): Recognized for curating and maintaining high-quality open datasets used by thousands of Kaggle users, ensuring data integrity and accessibility through best practices",
+      "Notebook Expert (Oct 2025 - Present): Consistently produced high-quality, insightful notebooks covering end-to-end projects with data cleaning, EDA, ML, and deep learning, earning medals and community recognition",
+      "Contributor (May 2025 - Present): Developed multiple notebooks demonstrating expertise in data analysis and visualization, participated in competitions applying advanced algorithms",
+      "Completed various Kaggle courses in Machine Learning, Data Visualization, Python, and SQL while actively contributing to discussions and collaborating with the global community"
     ],
-    skills: ["Machine Learning", "Data Analysis", "Data Visualization", "Python", "SQL", "Deep Learning", "Regression", "Classification"],
+    skills: ["Machine Learning", "Data Analysis", "Data Visualization", "Python", "SQL", "Deep Learning", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "Data Preprocessing", "Data Validation"],
     icon: Zap,
     gradient: "from-orange-500 via-red-500 to-pink-500",
     bgGradient: "from-orange-50 via-red-50 to-pink-50"
