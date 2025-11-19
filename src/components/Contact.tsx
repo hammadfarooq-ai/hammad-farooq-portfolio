@@ -54,8 +54,8 @@ const socialLinks = [
   {
     icon: Facebook,
     label: "Facebook",
-    value: "hammadfarooq.ml",
-    href: "https://web.facebook.com/hammadfarooq.ml/",
+    value: "seKure.ds",
+    href: "https://web.facebook.com/seKure.ds/",
     color: "from-blue-500 to-indigo-600",
     bgColor: "from-blue-50 to-indigo-100",
     description: "Personal updates & community"
