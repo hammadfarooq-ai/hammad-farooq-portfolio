@@ -3,6 +3,23 @@ import { Calendar, MapPin, Building, Code, Trophy, Zap, Sparkles } from "lucide-
 
 const experiences = [
   {
+    title: "Product Sourcing (Intern)",
+    company: "GAOTek Inc.",
+    period: "Sep 2025 - Nov 2025",
+    duration: "3 months",
+    location: "New York, United States · Remote",
+    description: "Contributed to innovative AI projects and gained exposure to global business operations across USA, Canada, and China offices.",
+    achievements: [
+      "Contributed to a real-time voice AI assistant project, exploring speech recognition and natural language processing techniques with Python and related tools",
+      "Collaborated with HR and technical teams to ensure compliance with The Fair Labor Standards Act (FLSA) for unpaid internships, gaining insight into legal and ethical standards",
+      "Supported paid employees by performing complementary tasks, enhancing skills in AI development and global business practices"
+    ],
+    skills: ["Python", "Speech Recognition", "Natural Language Processing", "AI Development", "FLSA Compliance", "Global Business"],
+    icon: Building,
+    gradient: "from-blue-500 via-indigo-500 to-purple-500",
+    bgGradient: "from-blue-50 via-indigo-50 to-purple-50"
+  },
+  {
     title: "Kaggle Contributor",
     company: "Kaggle · Self-employed",
     period: "May 2025 - Present",
