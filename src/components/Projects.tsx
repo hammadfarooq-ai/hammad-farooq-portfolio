@@ -59,6 +59,12 @@ const dataScienceProjects = [
 
 const aiProjects = [
   {
+    title: "Real-Time AI Avatar Assistant",
+    description: "Developed a real-time AI avatar assistant with realistic lip-syncing capabilities. Integrated HeyGen API for video generation and OpenAI API for conversational responses. Combined AI and web development for applications in virtual tutoring and support.",
+    tech: ["Next.js", "TypeScript", "HeyGen API", "OpenAI API", "Real-time Processing"],
+    githubUrl: "https://github.com/hammadfarooq-ai/Real-Time-Voice-AI-Assistant"
+  },
+  {
     title: "LangChain AI Chatbot Lab",
     description: "Advanced AI chatbot implementation using LangChain framework. Features natural language processing, conversation memory, and integration with various AI models for intelligent responses.",
     tech: ["Python", "LangChain", "AI", "NLP", "Chatbot"],
