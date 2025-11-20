@@ -5,6 +5,12 @@ import { ExternalLink, Github } from "lucide-react";
 
 const machineLearningProjects = [
   {
+    title: "Telco Customer Churn Prediction Model",
+    description: "Machine learning classification model predicting customer churn for telecom companies using RandomForestClassifier. Includes categorical encoding, feature scaling, and comprehensive data preprocessing. Achieved ~82% accuracy with F1 score of 0.81 for customer retention insights.",
+    tech: ["Python", "Pandas", "Scikit-learn", "RandomForestClassifier", "LabelEncoder", "Kaggle"],
+    githubUrl: "https://github.com/hammadfarooq-ai/telecom-customer-churn-model"
+  },
+  {
     title: "Titanic Survival Prediction",
     description: "Machine learning project predicting passenger survival on the Titanic using Random Forest classifier. Includes data exploration, feature engineering with one-hot encoding, and Kaggle competition submission workflow with comprehensive data analysis.",
     tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Random Forest", "Kaggle API"],
