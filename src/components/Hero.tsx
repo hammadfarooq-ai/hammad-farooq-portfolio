@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Github, Linkedin, Mail, X } from "lucide-react";
+import profileImage from "@/assets/profile.png";
 
 const Hero = () => {
   return (
@@ -53,7 +54,7 @@ const Hero = () => {
           <div className="mb-12 relative">
             <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-30 scale-110 animate-pulse"></div>
             <img 
-              src="/lovable-uploads/b872f8af-ffe8-4c32-bb1f-ed6c7b1e9342.png"
+              src={profileImage}
               alt="Hammad Farooq - AI/ML Engineer"
               className="w-48 h-48 mx-auto rounded-full shadow-elevated border-4 border-primary/40 hover:border-primary/80 transition-all duration-500 hover:scale-105 relative z-10 glass-card object-cover"
             />
@@ -100,7 +101,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="glass-button hover:shadow-tertiary hover:scale-105 transition-all duration-500 px-10 py-6 text-lg font-semibold rounded-2xl border-2 border-tertiary/30 hover:border-tertiary"
-              onClick={() => window.open('https://drive.google.com/file/d/1QVhllW68AxCf6qI9OBLR_sBigWfJwnbZ/view?usp=drive_link', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1yn2fNIYOUaIHmlCKfIbiBnxA6HCHWUDX/view?usp=sharing', '_blank')}
             >
               <Download className="mr-3 h-6 w-6" />
               Download Resume
