@@ -233,9 +233,12 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))',
 				'gradient-space': 'linear-gradient(135deg, hsl(240 60% 4%), hsl(270 60% 8%), hsl(280 50% 12%))',
 				'gradient-nebula': 'linear-gradient(135deg, hsl(270 100% 70%), hsl(195 100% 60%), hsl(320 90% 65%))',
 				'gradient-cosmic': 'linear-gradient(135deg, hsl(195 100% 60%), hsl(280 90% 70%), hsl(270 100% 70%))',
+				'gradient-primary': 'linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)))',
+				'gradient-secondary': 'linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)))',
 			}
 		}
 	},

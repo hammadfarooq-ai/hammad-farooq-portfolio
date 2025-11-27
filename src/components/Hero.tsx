@@ -4,49 +4,58 @@ import profileImage from "@/assets/profile.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      {/* Animated Tech Background */}
-      <div className="absolute inset-0 z-0">
-        {/* Neural Network Lines */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent animate-pulse"></div>
-          <div className="absolute top-1/4 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-secondary/40 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-tertiary/30 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-3/4 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-accent/40 to-transparent animate-pulse" style={{ animationDelay: '3s' }}></div>
-          <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent animate-pulse" style={{ animationDelay: '4s' }}></div>
-          
-          {/* Vertical lines */}
-          <div className="absolute left-0 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-primary/30 to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-          <div className="absolute left-1/4 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-secondary/25 to-transparent animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-          <div className="absolute left-1/2 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-tertiary/20 to-transparent animate-pulse" style={{ animationDelay: '2.5s' }}></div>
-          <div className="absolute left-3/4 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-accent/25 to-transparent animate-pulse" style={{ animationDelay: '3.5s' }}></div>
-          <div className="absolute right-0 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-primary/20 to-transparent animate-pulse" style={{ animationDelay: '4.5s' }}></div>
-        </div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Cosmic Galaxy Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0118] via-[#150134] to-[#1a0a2e]"></div>
+      
+      {/* Large Glowing Moon */}
+      <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-radial from-[#e0e0e0] via-[#b0b0b0] to-transparent rounded-full opacity-40 blur-sm animate-float-gentle"></div>
+      <div className="absolute top-24 right-24 w-56 h-56 bg-[#f5f5f5] rounded-full opacity-30 shadow-[0_0_100px_rgba(255,255,255,0.4)]"></div>
+      
+      {/* Nebula Clouds - Multiple Layers */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+        {/* Purple nebula */}
+        <div className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-gradient-radial from-primary/30 via-primary/10 to-transparent rounded-full blur-3xl animate-cosmic-drift opacity-60"></div>
+        <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-gradient-radial from-primary/25 via-primary/8 to-transparent rounded-full blur-3xl animate-cosmic-drift opacity-50" style={{ animationDelay: '2s', animationDuration: '80s' }}></div>
         
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Blue/Cyan nebula */}
+        <div className="absolute bottom-1/4 right-0 w-[700px] h-[700px] bg-gradient-radial from-secondary/25 via-secondary/10 to-transparent rounded-full blur-3xl animate-cosmic-drift opacity-60" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-1/3 right-1/4 w-[550px] h-[550px] bg-gradient-radial from-secondary/20 via-secondary/8 to-transparent rounded-full blur-3xl animate-cosmic-drift opacity-50" style={{ animationDelay: '6s', animationDuration: '90s' }}></div>
+        
+        {/* Pink/Magenta nebula */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-radial from-tertiary/20 via-tertiary/8 to-transparent rounded-full blur-3xl animate-cosmic-drift opacity-50" style={{ animationDelay: '8s', animationDuration: '100s' }}></div>
+        
+        {/* Teal accent nebula */}
+        <div className="absolute bottom-1/4 left-1/4 w-[450px] h-[450px] bg-gradient-radial from-accent/20 via-accent/8 to-transparent rounded-full blur-3xl animate-cosmic-drift opacity-45" style={{ animationDelay: '10s', animationDuration: '85s' }}></div>
       </div>
-
-      {/* Enhanced Animated background overlay */}
-      <div className="absolute inset-0 overflow-hidden z-1">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-accent/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
-        
-        {/* Matrix-style flowing data */}
-        <div className="absolute top-10 left-10 text-primary/30 text-xs font-mono animate-pulse">01101001</div>
-        <div className="absolute top-32 right-20 text-secondary/25 text-xs font-mono animate-pulse" style={{ animationDelay: '1s' }}>11010110</div>
-        <div className="absolute bottom-40 left-1/4 text-tertiary/20 text-xs font-mono animate-pulse" style={{ animationDelay: '2s' }}>10011001</div>
-        <div className="absolute bottom-20 right-1/3 text-accent/25 text-xs font-mono animate-pulse" style={{ animationDelay: '3s' }}>01110101</div>
-        
-        {/* Enhanced Floating particles */}
-        <div className="absolute top-20 right-20 w-2 h-2 bg-primary rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-32 left-16 w-1 h-1 bg-secondary rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-tertiary rounded-full animate-ping" style={{ animationDelay: '3.5s' }}></div>
-        <div className="absolute top-2/3 left-1/5 w-1 h-1 bg-accent rounded-full animate-ping" style={{ animationDelay: '4.5s' }}></div>
-        <div className="absolute bottom-1/3 right-1/5 w-2 h-2 bg-primary/50 rounded-full animate-ping" style={{ animationDelay: '5s' }}></div>
+      
+      {/* Distant Galaxies */}
+      <div className="absolute top-40 left-40 w-32 h-32 opacity-20">
+        <div className="w-full h-full bg-gradient-conic from-primary/40 via-transparent to-primary/40 rounded-full blur-md animate-spin" style={{ animationDuration: '60s' }}></div>
       </div>
+      <div className="absolute bottom-32 right-32 w-24 h-24 opacity-15">
+        <div className="w-full h-full bg-gradient-conic from-secondary/40 via-transparent to-secondary/40 rounded-full blur-md animate-spin" style={{ animationDuration: '45s', animationDirection: 'reverse' }}></div>
+      </div>
+      
+      {/* Shooting Stars Enhancement */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-1 h-20 bg-gradient-to-b from-white to-transparent animate-shooting-star opacity-0"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-24 bg-gradient-to-b from-star to-transparent animate-shooting-star opacity-0" style={{ animationDelay: '5s' }}></div>
+        <div className="absolute bottom-1/2 left-1/2 w-1 h-16 bg-gradient-to-b from-white to-transparent animate-shooting-star opacity-0" style={{ animationDelay: '10s' }}></div>
+      </div>
+      
+      {/* Floating Cosmic Particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-star rounded-full animate-float-gentle opacity-70"></div>
+        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-float-gentle opacity-60" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-secondary rounded-full animate-float-gentle opacity-70" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-tertiary rounded-full animate-float-gentle opacity-60" style={{ animationDelay: '6s' }}></div>
+        <div className="absolute top-2/3 left-2/3 w-1 h-1 bg-star rounded-full animate-float-gentle opacity-70" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-1/2 right-1/2 w-1 h-1 bg-accent rounded-full animate-float-gentle opacity-60" style={{ animationDelay: '5s' }}></div>
+      </div>
+      
+      {/* Subtle Overlay for Text Readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/30"></div>
       
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-5xl mx-auto text-center animate-fade-in-up">
@@ -61,7 +70,7 @@ const Hero = () => {
           </div>
 
           {/* Modern heading with enhanced typography */}
-          <h1 className="text-6xl md:text-8xl font-black mb-8 text-gradient-primary leading-tight tracking-tight">
+          <h1 className="text-6xl md:text-8xl font-black mb-8 text-gradient-primary leading-tight tracking-tight neon-text">
             Hammad Farooq
           </h1>
           
@@ -80,7 +89,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-primary hover:scale-105 transition-all duration-500 px-10 py-6 text-lg font-semibold rounded-2xl"
+              className="cosmic-button px-10 py-6 text-lg font-semibold rounded-2xl"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Mail className="mr-3 h-6 w-6" />
@@ -114,7 +123,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/hammadfarooq-ai/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="glass-card p-4 rounded-2xl hover:shadow-primary hover:scale-110 transform transition-all duration-300 group"
+              className="space-card p-4 rounded-2xl hover:scale-110 transform transition-all duration-300 group"
             >
               <Linkedin className="h-7 w-7 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
@@ -122,7 +131,7 @@ const Hero = () => {
               href="https://github.com/hammadfarooq-ai" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="glass-card p-4 rounded-2xl hover:shadow-secondary hover:scale-110 transform transition-all duration-300 group"
+              className="space-card p-4 rounded-2xl hover:scale-110 transform transition-all duration-300 group"
             >
               <Github className="h-7 w-7 text-muted-foreground group-hover:text-secondary transition-colors" />
             </a>
@@ -130,13 +139,13 @@ const Hero = () => {
               href="https://x.com/HammadFarooq470" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="glass-card p-4 rounded-2xl hover:shadow-tertiary hover:scale-110 transform transition-all duration-300 group"
+              className="space-card p-4 rounded-2xl hover:scale-110 transform transition-all duration-300 group"
             >
               <X className="h-7 w-7 text-muted-foreground group-hover:text-tertiary transition-colors" />
             </a>
             <a 
               href="mailto:hammadfarooq470@gmail.com"
-              className="glass-card p-4 rounded-2xl hover:shadow-accent hover:scale-110 transform transition-all duration-300 group"
+              className="space-card p-4 rounded-2xl hover:scale-110 transform transition-all duration-300 group"
             >
               <Mail className="h-7 w-7 text-muted-foreground group-hover:text-accent transition-colors" />
             </a>
@@ -147,8 +156,8 @@ const Hero = () => {
             className="cursor-pointer animate-bounce hover:scale-125 transition-transform duration-300"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <div className="glass-card p-4 rounded-full hover:shadow-glow">
-              <ArrowDown className="h-8 w-8 mx-auto text-gradient-primary" />
+            <div className="space-card p-4 rounded-full pulse-glow">
+              <ArrowDown className="h-8 w-8 mx-auto text-primary" />
             </div>
           </div>
         </div>
