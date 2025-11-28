@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Github, Linkedin, Trophy, ExternalLink, Heart, MessageCircle, Send, Zap, Facebook, BookOpen } from "lucide-react";
+import Card3D from "@/components/Card3D";
 
 const contactMethods = [
   {
@@ -118,12 +119,12 @@ const Contact = () => {
                 {contactMethods.map((contact, index) => {
                   const IconComponent = contact.icon;
                   return (
-                    <Card 
-                      key={index}
-                      className={`group bg-gradient-to-br ${contact.bgColor} dark:from-slate-800/60 dark:to-slate-700/60 backdrop-blur-lg border-2 border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden animate-fade-in`}
-                      style={{animationDelay: `${index * 0.2}s`}}
-                      onClick={() => contact.href !== "#" && window.open(contact.href, contact.href.startsWith('mailto:') || contact.href.startsWith('tel:') ? '_self' : '_blank')}
-                    >
+                    <Card3D key={index} intensity={15}>
+                      <Card 
+                        className={`group bg-gradient-to-br ${contact.bgColor} dark:from-slate-800/60 dark:to-slate-700/60 backdrop-blur-lg border-2 border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden animate-fade-in`}
+                        style={{animationDelay: `${index * 0.2}s`}}
+                        onClick={() => contact.href !== "#" && window.open(contact.href, contact.href.startsWith('mailto:') || contact.href.startsWith('tel:') ? '_self' : '_blank')}
+                      >
                       {/* Floating orb */}
                       <div className={`absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br ${contact.color} opacity-20 rounded-full blur-xl group-hover:scale-125 transition-transform duration-500`}></div>
                       
@@ -142,6 +143,7 @@ const Contact = () => {
                         </p>
                       </CardContent>
                     </Card>
+                    </Card3D>
                   );
                 })}
               </div>
@@ -158,12 +160,12 @@ const Contact = () => {
                 {socialLinks.map((social, index) => {
                   const IconComponent = social.icon;
                   return (
-                    <Card 
-                      key={index}
-                      className={`group bg-gradient-to-br ${social.bgColor} dark:from-slate-800/60 dark:to-slate-700/60 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer overflow-hidden animate-fade-in`}
-                      style={{animationDelay: `${(index + 3) * 0.15}s`}}
-                      onClick={() => window.open(social.href, '_blank')}
-                    >
+                    <Card3D key={index} intensity={10}>
+                      <Card 
+                        className={`group bg-gradient-to-br ${social.bgColor} dark:from-slate-800/60 dark:to-slate-700/60 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden animate-fade-in`}
+                        style={{animationDelay: `${(index + 3) * 0.15}s`}}
+                        onClick={() => window.open(social.href, '_blank')}
+                      >
                       <CardContent className="p-4">
                         <div className="flex items-center gap-4">
                           <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${social.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md`}>
@@ -184,6 +186,7 @@ const Contact = () => {
                         </div>
                       </CardContent>
                     </Card>
+                    </Card3D>
                   );
                 })}
               </div>

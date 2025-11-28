@@ -6,10 +6,12 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
+import SpaceScene3D from "@/components/SpaceScene3D";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0118] via-[#150134] to-[#1a0a2e] relative">
+      <SpaceScene3D />
       <Navigation />
       <Hero />
       <Projects />

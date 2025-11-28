@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, ExternalLink, Shield, Star, Trophy, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Card3D from "@/components/Card3D";
 
 const certifications = [
   {
@@ -117,11 +118,11 @@ const Certifications = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             {featuredCerts.map((cert, index) => (
-              <Card 
-                key={index}
-                className={`group relative bg-gradient-to-br ${cert.bgColor} dark:from-slate-800/80 dark:to-slate-700/80 backdrop-blur-lg border-2 border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 overflow-hidden animate-fade-in`}
-                style={{animationDelay: `${index * 0.2}s`}}
-              >
+              <Card3D key={index} intensity={15}>
+                <Card 
+                  className={`group relative bg-gradient-to-br ${cert.bgColor} dark:from-slate-800/80 dark:to-slate-700/80 backdrop-blur-lg border-2 border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden animate-fade-in`}
+                  style={{animationDelay: `${index * 0.2}s`}}
+                >
                 {/* Featured badge */}
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
                   <Trophy className="h-3 w-3" />
@@ -169,6 +170,7 @@ const Certifications = () => {
                   </Button>
                 </CardContent>
               </Card>
+              </Card3D>
             ))}
           </div>
         </div>
@@ -183,11 +185,11 @@ const Certifications = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {otherCerts.map((cert, index) => (
-              <Card 
-                key={index}
-                className={`group bg-gradient-to-br ${cert.bgColor} dark:from-slate-800/60 dark:to-slate-700/60 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in`}
-                style={{animationDelay: `${(index + 3) * 0.1}s`}}
-              >
+              <Card3D key={index} intensity={12}>
+                <Card 
+                  className={`group bg-gradient-to-br ${cert.bgColor} dark:from-slate-800/60 dark:to-slate-700/60 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in`}
+                  style={{animationDelay: `${(index + 3) * 0.1}s`}}
+                >
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3 mb-3">
                     <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${cert.color} flex items-center justify-center text-lg group-hover:scale-110 transition-transform duration-300`}>
@@ -218,6 +220,7 @@ const Certifications = () => {
                   </Button>
                 </CardContent>
               </Card>
+              </Card3D>
             ))}
           </div>
         </div>
