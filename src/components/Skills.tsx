@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Database, Wrench, Brain, Sparkles, Zap, Star } from "lucide-react";
+import Card3D from "@/components/Card3D";
 
 const skillCategories = [
   {
@@ -63,12 +64,12 @@ const Skills = () => {
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <div
-                key={index}
-                className="group animate-fade-in hover-scale"
-                style={{animationDelay: `${index * 0.2}s`}}
-              >
-                <Card className={`relative h-full bg-gradient-to-br ${category.bgColor} dark:from-slate-800/50 dark:to-slate-700/50 backdrop-blur-lg border-2 border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden`}>
+              <Card3D key={index} intensity={20}>
+                <div
+                  className="group animate-fade-in"
+                  style={{animationDelay: `${index * 0.2}s`}}
+                >
+                  <Card className={`relative h-full bg-gradient-to-br ${category.bgColor} dark:from-slate-800/50 dark:to-slate-700/50 backdrop-blur-lg border-2 border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden`}>
                   {/* Floating orb */}
                   <div className={`absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br ${category.color} opacity-20 rounded-full blur-xl group-hover:scale-125 transition-transform duration-500`}></div>
                   
@@ -108,6 +109,7 @@ const Skills = () => {
                   </CardContent>
                 </Card>
               </div>
+              </Card3D>
             );
           })}
         </div>

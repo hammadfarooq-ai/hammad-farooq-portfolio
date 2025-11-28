@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink, Github } from "lucide-react";
+import Card3D from "@/components/Card3D";
 
 const machineLearningProjects = [
   {
@@ -176,12 +177,12 @@ const ProjectGrid = ({ projects }: { projects: any[] }) => {
   return (
     <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
       {projects.map((project, index) => (
-        <div 
-          key={index} 
-          className="break-inside-avoid mb-8 animate-fade-in hover-lift"
-          style={{animationDelay: `${index * 0.2}s`}}
-        >
-          <Card className="glass-card hover:shadow-elevated transition-all duration-500 group overflow-hidden border-2 border-primary/20 hover:border-primary/50">
+        <Card3D key={index} intensity={12}>
+          <div 
+            className="break-inside-avoid mb-8 animate-fade-in"
+            style={{animationDelay: `${index * 0.2}s`}}
+          >
+            <Card className="glass-card hover:shadow-elevated transition-all duration-500 group overflow-hidden border-2 border-primary/20 hover:border-primary/50 h-full">
             {/* Gradient header */}
             <div className={`h-2 ${index % 4 === 0 ? 'bg-gradient-primary' : index % 4 === 1 ? 'bg-gradient-secondary' : index % 4 === 2 ? 'bg-gradient-tertiary' : 'bg-gradient-accent'}`}></div>
             
@@ -228,6 +229,7 @@ const ProjectGrid = ({ projects }: { projects: any[] }) => {
             </CardContent>
           </Card>
         </div>
+        </Card3D>
       ))}
     </div>
   );

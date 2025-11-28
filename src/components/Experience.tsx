@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, MapPin, Building, Code, Trophy, Zap, Sparkles } from "lucide-react";
+import Card3D from "@/components/Card3D";
 
 const experiences = [
   {
@@ -128,11 +129,12 @@ const Experience = () => {
                 
                 {/* Experience card */}
                 <div className={`lg:w-1/2 ${isLeft ? 'lg:pr-12' : 'lg:pl-12 lg:ml-auto'}`}>
-                  <div className={`group relative ${isLeft ? 'lg:-mr-6' : 'lg:-ml-6'}`}>
-                    {/* Arrow pointing to timeline */}
-                    <div className={`absolute top-8 ${isLeft ? 'right-0 border-l-primary' : 'left-0 border-r-primary'} w-0 h-0 border-t-8 border-b-8 border-t-transparent border-b-transparent ${isLeft ? 'border-l-8' : 'border-r-8'} hidden lg:block`}></div>
-                    
-                    <Card className={`bg-gradient-to-br ${exp.bgGradient} dark:from-slate-800/50 dark:via-slate-700/50 dark:to-slate-800/50 backdrop-blur-lg border-2 border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 overflow-hidden relative`}>
+                  <Card3D intensity={10}>
+                    <div className={`group relative ${isLeft ? 'lg:-mr-6' : 'lg:-ml-6'}`}>
+                      {/* Arrow pointing to timeline */}
+                      <div className={`absolute top-8 ${isLeft ? 'right-0 border-l-primary' : 'left-0 border-r-primary'} w-0 h-0 border-t-8 border-b-8 border-t-transparent border-b-transparent ${isLeft ? 'border-l-8' : 'border-r-8'} hidden lg:block`}></div>
+                      
+                      <Card className={`bg-gradient-to-br ${exp.bgGradient} dark:from-slate-800/50 dark:via-slate-700/50 dark:to-slate-800/50 backdrop-blur-lg border-2 border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden relative`}>
                       {/* Floating icon */}
                       <div className={`absolute -top-6 ${isLeft ? 'right-6' : 'left-6'} w-12 h-12 bg-gradient-to-r ${exp.gradient} rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                         <IconComponent className="h-6 w-6 text-white" />
@@ -200,6 +202,7 @@ const Experience = () => {
                       </CardContent>
                     </Card>
                   </div>
+                  </Card3D>
                 </div>
               </div>
             );
