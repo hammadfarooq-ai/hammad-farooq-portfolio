@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Stars, OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
+import { Stars, OrbitControls, MeshDistortMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 
 // Animated Planet Component
@@ -15,16 +15,16 @@ function Planet({ position, color, size = 1, speed = 1 }: any) {
   });
 
   return (
-    <Sphere ref={meshRef} args={[size, 64, 64]} position={position}>
+    <mesh ref={meshRef} position={position}>
+      <sphereGeometry args={[size, 64, 64]} />
       <MeshDistortMaterial
         color={color}
-        attach="material"
         distort={0.3}
         speed={2}
         roughness={0.2}
         metalness={0.8}
       />
-    </Sphere>
+    </mesh>
   );
 }
 
@@ -97,14 +97,15 @@ function Moon() {
 
   return (
     <group position={[8, 3, -5]}>
-      <Sphere ref={meshRef} args={[1.5, 64, 64]}>
+      <mesh ref={meshRef}>
+        <sphereGeometry args={[1.5, 64, 64]} />
         <meshStandardMaterial
           color="#e0e0e0"
           emissive="#ffffff"
           emissiveIntensity={0.3}
           roughness={0.7}
         />
-      </Sphere>
+      </mesh>
       <pointLight position={[0, 0, 0]} intensity={2} distance={10} color="#ffffff" />
     </group>
   );
